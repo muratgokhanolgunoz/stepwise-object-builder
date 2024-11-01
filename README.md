@@ -2,6 +2,8 @@
 
 This project demonstrates a builder model for a road transportation scenario where a user can define a journey, add drivers and add cargo step by step. The code uses functional interfaces and a streamlined API to create a complete `RoadTransport` object. `RoadTransport was chosen as the scenario to illustrate the Builder Pattern, Method Chaining and Fluent Interfaces constructs`.
 
+![Stepwise Object Builder](https://raw.githubusercontent.com/muratgokhanolgunoz/stepwise-object-builder/refs/heads/master/cover.webp)
+
 ## Features
 - Define a journey with route and departure date-time.
 - Add multiple drivers to the journey.
