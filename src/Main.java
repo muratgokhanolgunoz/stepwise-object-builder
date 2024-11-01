@@ -2,6 +2,7 @@ import java.text.ParseException;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
+        // Create a road transport operation
         RoadTransport roadTransport = RoadTransport.create()
                 .setJourney(journey -> journey
                         .setPortOfLoading("TR - Istanbul")
@@ -27,11 +28,16 @@ public class Main {
                         .setWeight(15000)
                 )
                 .addCargo(cargo -> cargo
+                        .setDescription("Computer Parts")
+                        .setWeight(1000)
+                )
+                .addCargo(cargo -> cargo
                         .setDescription("Foods")
                         .setWeight(5000)
                 )
                 .build();
 
+        // Print transport information
         roadTransport.print();
     }
 }
